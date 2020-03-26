@@ -34,6 +34,7 @@ export default {
       <pre {...props} />
     </StyledPre>
   ),
+  Download: DownloadButton,
   code: CodeBlock,
   a: AnchorTag,
   // TODO add `img`
