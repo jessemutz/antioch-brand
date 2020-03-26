@@ -23,6 +23,19 @@ $sin: #000;
 
 $link: $blue;
 
+//* Antioch Colors
+$arch-blue: #44697d;
+$arch-blue: #1274a8;
+$arch-sky: #a6bcc6;
+$arch-teal: #25c092;
+$arch-green: #a8b400;
+$arch-yellow: #f3d61d;
+$arch-maroon: #7a382d;
+$arch-gray: #53493f;
+$arch-black: #382d24;
+$arch-purple: #a93cb9;
+$arch-orange: #ff851b;
+
 //* Set "mix" colors
 // - used in the color scheme generator.
 $lt: $white;
@@ -34,7 +47,13 @@ $dk: $sin;
 // * Use these to override any of the default colors above.
 // * Edit only these colors to create your color scheme
 
-$neutral: $gray;
+$neutral: $arch-gray;
+$blue: $arch-blue;
+$yellow: $arch-yellow;
+$green: $arch-green;
+$teal: $arch-teal;
+$maroon: $arch-maroon;
+$purple: $arch-purple;
 
 //! Color scheme generator
 //!
@@ -78,6 +97,19 @@ $red-80: mix($red-100, $lt, 80%);
 $red-60: mix($red-100, $lt, 60%);
 $red-40: mix($red-100, $lt, 40%);
 $red-20: mix($red-100, $lt, 20%);
+
+// maroons
+// ----
+// bootstrap @brand-danger
+$maroon-100: $maroon;
+$maroon-800: mix($maroon-100, $dk, 20%);
+$maroon-600: mix($maroon-100, $dk, 40%);
+$maroon-400: mix($maroon-100, $dk, 60%);
+$maroon-200: mix($maroon-100, $dk, 80%);
+$maroon-80: mix($maroon-100, $lt, 80%);
+$maroon-60: mix($maroon-100, $lt, 60%);
+$maroon-40: mix($maroon-100, $lt, 40%);
+$maroon-20: mix($maroon-100, $lt, 20%);
 
 //
 // orange
@@ -170,8 +202,8 @@ $purple-20: mix($purple-100, $lt, 20%);
 
 // .color-scheme {
 //   /*
-//    * neutral
-//    */
+//     * neutral
+//     */
 //   gray-100: $gray-100;
 //   gray-800: $gray-800;
 //   gray-600: $gray-600;
@@ -188,8 +220,8 @@ $purple-20: mix($purple-100, $lt, 20%);
 //   gray-10: $gray-10;
 //   gray-00: $gray-00;
 //   /*
-//    * red
-//    */
+//     * red
+//     */
 //   red-100: $red-100;
 //   red-800: $red-800;
 //   red-600: $red-600;
@@ -200,8 +232,8 @@ $purple-20: mix($purple-100, $lt, 20%);
 //   red-40: $red-40;
 //   red-20: $red-20;
 //   /*
-//    * orange
-//    */
+//     * orange
+//     */
 //   orange-100: $orange-100;
 //   orange-800: $orange-800;
 //   orange-600: $orange-600;
@@ -212,8 +244,8 @@ $purple-20: mix($purple-100, $lt, 20%);
 //   orange-40: $orange-40;
 //   orange-20: $orange-20;
 //   /*
-//    * yellow
-//    */
+//     * yellow
+//     */
 //   yellow-100: $yellow-100;
 //   yellow-800: $yellow-800;
 //   yellow-600: $yellow-600;
@@ -224,8 +256,8 @@ $purple-20: mix($purple-100, $lt, 20%);
 //   yellow-40: $yellow-40;
 //   yellow-20: $yellow-20;
 //   /*
-//    * green
-//    */
+//     * green
+//     */
 //   green-100: $green-100;
 //   green-800: $green-800;
 //   green-600: $green-600;
@@ -236,8 +268,8 @@ $purple-20: mix($purple-100, $lt, 20%);
 //   green-40: $green-40;
 //   green-20: $green-20;
 //   /*
-//    * blue
-//    */
+//     * blue
+//     */
 //   blue-100: $blue-100;
 //   blue-800: $blue-800;
 //   blue-600: $blue-600;
@@ -249,8 +281,8 @@ $purple-20: mix($purple-100, $lt, 20%);
 //   blue-20: $blue-20;
 //   blue-00: $blue-00;
 //   /*
-//    * teal
-//    */
+//     * teal
+//     */
 //   teal-100: $teal-100;
 //   teal-800: $teal-800;
 //   teal-600: $teal-600;
@@ -261,8 +293,8 @@ $purple-20: mix($purple-100, $lt, 20%);
 //   teal-40: $teal-40;
 //   teal-20: $teal-20;
 //   /*
-//    * purple
-//    */
+//     * purple
+//     */
 //   purple-100: $purple-100;
 //   purple-800: $purple-800;
 //   purple-600: $purple-600;
@@ -282,97 +314,97 @@ $purple-20: mix($purple-100, $lt, 20%);
 // * Paste the compiled code here to let your VSCode plugins generate a preview of the hex codes.
 // * This is your color scheme
 
-// $gray-100: #8b90a0;
-// $gray-800: #1c1d20;
-// $gray-600: #383a40;
-// $gray-400: #535660;
-// $gray-200: #6f7380;
-// $gray-90: #979baa;
-// $gray-80: #a2a6b3;
-// $gray-70: #aeb1bd;
-// $gray-60: #b9bcc6;
-// $gray-50: #c5c8d0;
-// $gray-40: #d1d3d9;
-// $gray-30: #dcdee3;
-// $gray-20: #e8e9ec;
-// $gray-10: #f3f4f6;
-// $gray-00: #fff;
-// /*
-//   * red
-//   */
-// $red-100: #e94035;
-// $red-800: #2f0d0b;
-// $red-600: #5d1a15;
-// $red-400: #8c2620;
-// $red-200: #ba332a;
-// $red-80: #ed665d;
-// $red-60: #f28c86;
-// $red-40: #f6b3ae;
-// $red-20: #fbd9d7;
+//* neutral
+$gray-100: #53493f;
+$gray-800: #110f0d;
+$gray-600: #211d19;
+$gray-400: #322c26;
+$gray-200: #423a32;
+$gray-90: #645b52;
+$gray-80: #756d65;
+$gray-70: #878079;
+$gray-60: #98928c;
+$gray-50: #a9a49f;
+$gray-40: #bab6b2;
+$gray-30: #cbc8c5;
+$gray-20: #dddbd9;
+$gray-10: #eeedec;
+$gray-00: #fff;
 
-// //* orange
-// $orange-100: #f2994a;
-// $orange-800: #301f0f;
-// $orange-600: #613d1e;
-// $orange-400: #915c2c;
-// $orange-200: #c27a3b;
-// $orange-80: #f5ad6e;
-// $orange-60: #f7c292;
-// $orange-40: #fad6b7;
-// $orange-20: #fcebdb;
+//* red
+$red-100: #ff4136;
+$red-800: #330d0b;
+$red-600: #661a16;
+$red-400: #992720;
+$red-200: #cc342b;
+$red-80: #ff675e;
+$red-60: #ff8d86;
+$red-40: #ffb3af;
+$red-20: #ffd9d7;
 
-// //* yellow
-// $yellow-100: #f2c94c;
-// $yellow-800: #30280f;
-// $yellow-600: #61501e;
-// $yellow-400: #91792e;
-// $yellow-200: #c2a13d;
-// $yellow-80: #f5d470;
-// $yellow-60: #f7df94;
-// $yellow-40: #fae9b7;
-// $yellow-20: #fcf4db;
+//* orange
+$orange-100: #ff851b;
+$orange-800: #331b05;
+$orange-600: #66350b;
+$orange-400: #995010;
+$orange-200: #cc6a16;
+$orange-80: #ff9d49;
+$orange-60: #ffb676;
+$orange-40: #ffcea4;
+$orange-20: #ffe7d1;
 
-// //* green
-// $green-100: #27ae60;
-// $green-800: #082313;
-// $green-600: #104626;
-// $green-400: #17683a;
-// $green-200: #1f8b4d;
-// $green-80: #52be80;
-// $green-60: #7dcea0;
-// $green-40: #a9dfbf;
-// $green-20: #d4efdf;
+//* yellow
+$yellow-100: #f3d61d;
+$yellow-800: #312b06;
+$yellow-600: #61560c;
+$yellow-400: #928011;
+$yellow-200: #c2ab17;
+$yellow-80: #f5de4a;
+$yellow-60: #f8e677;
+$yellow-40: #faefa5;
+$yellow-20: #fdf7d2;
 
-// //* blue
-// $blue-100: #2d9cdb;
-// $blue-800: #091f2c;
-// $blue-600: #123e58;
-// $blue-400: #1b5e83;
-// $blue-200: #247daf;
-// $blue-80: #57b0e2;
-// $blue-60: #81c4e9;
-// $blue-40: #abd7f1;
-// $blue-20: #d5ebf8;
-// $blue-00: #0074d9;
+//* green
+$green-100: #a8b400;
+$green-800: #222400;
+$green-600: #434800;
+$green-400: #656c00;
+$green-200: #869000;
+$green-80: #b9c333;
+$green-60: #cbd266;
+$green-40: #dce199;
+$green-20: #eef0cc;
 
-// //* teal
-// $teal-100: #39cccc;
-// $teal-800: #0b2929;
-// $teal-600: #175252;
-// $teal-400: #227a7a;
-// $teal-200: #2ea3a3;
-// $teal-80: #61d6d6;
-// $teal-60: #88e0e0;
-// $teal-40: #b0ebeb;
-// $teal-20: #d7f5f5;
+//* blue
+$blue-100: #1274a8;
+$blue-800: #041722;
+$blue-600: #072e43;
+$blue-400: #0b4665;
+$blue-200: #0e5d86;
+$blue-80: #4190b9;
+$blue-60: #71accb;
+$blue-40: #a0c7dc;
+$blue-20: #d0e3ee;
+$blue-00: #0074d9;
 
-// //* purple
-// $purple-100: #b10dc9;
-// $purple-800: #230328;
-// $purple-600: #470550;
-// $purple-400: #6a0879;
-// $purple-200: #8e0aa1;
-// $purple-80: #c13dd4;
-// $purple-60: #d06edf;
-// $purple-40: #e09ee9;
-// $purple-20: #efcff4;
+//* teal
+$teal-100: #25c092;
+$teal-800: #07261d;
+$teal-600: #0f4d3a;
+$teal-400: #167358;
+$teal-200: #1e9a75;
+$teal-80: #51cda8;
+$teal-60: #7cd9be;
+$teal-40: #a8e6d3;
+$teal-20: #d3f2e9;
+
+//* purple
+$purple-100: #a93cb9;
+$purple-800: #220c25;
+$purple-600: #44184a;
+$purple-400: #65246f;
+$purple-200: #873094;
+$purple-80: #ba63c7;
+$purple-60: #cb8ad5;
+$purple-40: #ddb1e3;
+$purple-20: #eed8f1;
