@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 
 import CodeBlock from './codeBlock';
 import AnchorTag from './anchor';
+import DownloadButton from './download';
 
 const StyledPre = styled('pre')`
   padding: 16px;

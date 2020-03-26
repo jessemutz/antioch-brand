@@ -27,7 +27,7 @@ export const StyledNextPrevious = styled('div')`
     box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
     text-decoration: none;
 
-    background-color: ${props => props.theme.colors.background};
+    background-color: ${props => props.theme.colors.bg_pop};
     color: ${props => props.theme.colors.text};
   }
 
@@ -49,19 +49,19 @@ export const StyledNextPrevious = styled('div')`
     box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
     text-decoration: none;
 
-    background-color: ${props => props.theme.colors.background};
+    background-color: ${props => props.theme.colors.bg_pop};
     color: ${props => props.theme.colors.text};
   }
 
   .nextBtn:hover,
   .previousBtn:hover {
     text-decoration: none;
-    border: 1px solid #1ed3c6;
+    border: 1px solid #0047d9;
   }
 
   .nextBtn:hover .rightArrow,
   .previousBtn:hover .leftArrow {
-    color: #1ed3c6;
+    color: #0047d9;
   }
 
   .leftArrow {

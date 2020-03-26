@@ -7,26 +7,28 @@ const baseTheme = {
 const lightTheme = {
   ...baseTheme,
   colors: {
-    background: '#fdfbf8',
-    heading: '#3A2D40',
-    text: '#271a2d',
+    background: '#f0efee',
+    heading: '#072e43',
+    text: '#292521',
     preFormattedText: 'rgb(245, 247, 249)',
     link: '#2376FF',
-    sidebar: '#f3e9e2',
-    sidebarTitle: '#e3d9d2',
+    sidebar: '#e1dedd',
+    sidebarTitle: '#d1cecb',
+    bg_pop: '#fff',
   },
 };
 
 const darkTheme = {
   ...baseTheme,
   colors: {
-    background: '#271a2d',
+    background: '#041722',
     heading: '#fff',
     text: '#fff',
     preFormattedText: '#211924',
     link: '#1fd3e6',
-    sidebar: '#211528',
-    sidebarTitle: '#392741',
+    sidebar: '#072e43',
+    sidebarTitle: '#0b4665',
+    bg_pop: '#151211',
   },
 };
 

@@ -3,7 +3,7 @@ import * as React from 'react';
 const DownloadButton = ({ children: description, ...props }) => {
   return (
     <div class="download">
-      <a href={props.href} class="download-link" target="_blank">
+      <a href={props.href} class="download-link" target="_blank" download>
         <svg class="icon" viewBox="0 0 120 120">
           <g>
             <g class="catalog-5tplvb-DownloadIcon-DownloadIcon">

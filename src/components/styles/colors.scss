@@ -31,8 +31,8 @@ $arch-teal: #25c092;
 $arch-green: #a8b400;
 $arch-yellow: #f3d61d;
 $arch-maroon: #7a382d;
-$arch-gray: #53493f;
-$arch-black: #382d24;
+$arch-gray: #675c53;
+$arch-black: #292521;
 $arch-purple: #a93cb9;
 $arch-orange: #ff851b;
 
@@ -84,7 +84,7 @@ $gray-dark: $gray-400;
 $gray: $gray-100;
 $gray-light: $gray-60;
 $gray-lighter: $gray-20;
-
+$text-color: $arch-black;
 // reds
 // ----
 // bootstrap @brand-danger
@@ -220,6 +220,18 @@ $purple-20: mix($purple-100, $lt, 20%);
 //   gray-10: $gray-10;
 //   gray-00: $gray-00;
 //   /*
+//     * maroon
+//     */
+//   maroon-100: $maroon-100;
+//   maroon-800: $maroon-800;
+//   maroon-600: $maroon-600;
+//   maroon-400: $maroon-400;
+//   maroon-200: $maroon-200;
+//   maroon-80: $maroon-80;
+//   maroon-60: $maroon-60;
+//   maroon-40: $maroon-40;
+//   maroon-20: $maroon-20;
+//   /*
 //     * red
 //     */
 //   red-100: $red-100;
@@ -315,21 +327,32 @@ $purple-20: mix($purple-100, $lt, 20%);
 // * This is your color scheme
 
 //* neutral
-$gray-100: #53493f;
-$gray-800: #110f0d;
-$gray-600: #211d19;
-$gray-400: #322c26;
-$gray-200: #423a32;
-$gray-90: #645b52;
-$gray-80: #756d65;
-$gray-70: #878079;
-$gray-60: #98928c;
-$gray-50: #a9a49f;
-$gray-40: #bab6b2;
-$gray-30: #cbc8c5;
-$gray-20: #dddbd9;
-$gray-10: #eeedec;
+$gray-100: #675c53;
+$gray-800: #151211;
+$gray-600: #292521;
+$gray-400: #3e3732;
+$gray-200: #524a42;
+$gray-90: #766c64;
+$gray-80: #857d75;
+$gray-70: #958d87;
+$gray-60: #a49d98;
+$gray-50: #b3aea9;
+$gray-40: #c2beba;
+$gray-30: #d1cecb;
+$gray-20: #e1dedd;
+$gray-10: #f0efee;
 $gray-00: #fff;
+
+//* maroon
+$maroon-100: #7a382d;
+$maroon-800: #180b09;
+$maroon-600: #311612;
+$maroon-400: #49221b;
+$maroon-200: #622d24;
+$maroon-80: #956057;
+$maroon-60: #af8881;
+$maroon-40: #caafab;
+$maroon-20: #e4d7d5;
 
 //* red
 $red-100: #ff4136;

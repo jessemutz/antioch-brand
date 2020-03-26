@@ -14,7 +14,7 @@ const Wrapper = styled('div')`
   background: ${({ theme }) => theme.colors.background};
 
   aside {
-    background: ${({theme}) => theme.colors.sidebar};
+    background: ${({ theme }) => theme.colors.sidebar};
   }
   .sidebarTitle {
     background-color: ${({ theme }) => theme.colors.sidebarTitle};
@@ -22,7 +22,6 @@ const Wrapper = styled('div')`
       color: ${({ theme }) => theme.colors.text};
     }
   }
-
 
   .sideBarUL li a {
     color: ${({ theme }) => theme.colors.text};
@@ -68,17 +67,25 @@ const Layout = ({ children, location }) => (
     <MDXProvider components={mdxComponents}>
       <Wrapper>
         <LeftSideBarWidth className={'hiddenMobile'}>
-        <div class="sidebar-badges">
-              <img src="https://img.shields.io/badge/version-0.3_alpha-yellow" alt="Version 0.3-alpha" class="badge" />
-              <img src="https://img.shields.io/badge/updated-march_2020-green" alt="Updated March 2020" class="badge" />
-            </div>
+          <div class="sidebar-badges">
+            <img
+              src="https://img.shields.io/badge/version-0.3_alpha-yellow"
+              alt="Version 0.3-alpha"
+              class="badge"
+            />
+            <img
+              src="https://img.shields.io/badge/updated-march_2020-green"
+              alt="Updated March 2020"
+              class="badge"
+            />
+          </div>
           <Sidebar location={location} />
         </LeftSideBarWidth>
         {config.sidebar.title ? (
-            <div
-              className={'sidebarTitle sideBarShow'}
-              dangerouslySetInnerHTML={{ __html: config.sidebar.title }}
-            />
+          <div
+            className={'sidebarTitle sideBarShow'}
+            dangerouslySetInnerHTML={{ __html: config.sidebar.title }}
+          />
         ) : null}
         <Content>
           <MaxWidth>{children}</MaxWidth>

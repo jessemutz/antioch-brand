@@ -74,7 +74,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
       }
     `}
     render={data => {
-      const logoImg = require('./images/wil-logo.svg');
+      const logoImg = require('./images/antioch-logo.png');
 
       const twitter = require('./images/twitter.svg');
 
@@ -109,8 +109,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
             {config.header.social ? (
               <ul
                 className="socialWrapper visibleMobileView"
-                dangerouslySetInnerHTML={{ __html: config.header.social }}
-              ></ul>
+                dangerouslySetInnerHTML={{ __html: config.header.social }}></ul>
             ) : null}
             {isSearchEnabled ? (
               <div className={'searchWrapper hiddenMobile navBarUL'}>
@@ -151,8 +150,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                     <a
                       href={'https://twitter.com/intent/tweet?&text=' + tweetText}
                       target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                      rel="noopener noreferrer">
                       <img className={'shareIcon'} src={twitter} alt={'Twitter'} />
                     </a>
                   </li>
@@ -162,8 +160,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                   <li className={'hiddenMobile'}>
                     <ul
                       className="socialWrapper"
-                      dangerouslySetInnerHTML={{ __html: config.header.social }}
-                    ></ul>
+                      dangerouslySetInnerHTML={{ __html: config.header.social }}></ul>
                   </li>
                 ) : null}
                 <li>
@@ -182,8 +179,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                 className={'navBarToggle'}
                 onKeyDown={myFunction}
                 role="button"
-                tabIndex={0}
-              >
+                tabIndex={0}>
                 <span className={'iconBar'}></span>
                 <span className={'iconBar'}></span>
                 <span className={'iconBar'}></span>
