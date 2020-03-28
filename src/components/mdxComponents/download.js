@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const DownloadButton = ({ children: description, ...props }) => {
+const DownloadButton = ({ children: title, ...props }) => {
   return (
     <div class="download">
       <a href={props.href} class="download-link" target="_blank" download>
@@ -13,8 +13,8 @@ const DownloadButton = ({ children: description, ...props }) => {
           </g>
         </svg>
         <div class="description">
-          <h4 class="title">{props.title}</h4>
-          <p>{description}</p>
+          <h4 class="title">{title}</h4>
+          <p>{props.description}</p>
         </div>
       </a>
     </div>
