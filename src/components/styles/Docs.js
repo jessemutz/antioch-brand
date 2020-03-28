@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const StyledHeading = styled('h1')`
   font-size: 32px;
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 700;
   border-left: 4px solid #a8b400;
   padding: 0 16px;
   flex: 1;
@@ -21,7 +21,7 @@ export const Edit = styled('div')`
     font-weight: 500;
     line-height: 1em;
     text-decoration: none;
-    color: red;
+    color: #e1dedd;
     border: 1px solid rgb(211, 220, 228);
     cursor: pointer;
     border-radius: 3px;

@@ -1,4 +1,5 @@
 @import "colors";
+@import "fonts";
 
 * {
   margin: 0;
@@ -21,9 +22,8 @@
 }
 html,
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Chivo", "Segoe UI", "Chivo", "Chivo Light", "Oxygen", "Ubuntu",
-    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+  font-family: "Proxima Nova", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
   font-size: 18px;
   scroll-behavior: smooth;
@@ -32,10 +32,6 @@ body {
 a {
   transition: color 0.15s;
   /* color: #663399; */
-}
-
-body {
-  font-family: "Chivo";
 }
 
 .visibleMobile {
@@ -285,7 +281,7 @@ ol {
 }
 
 .logoContent {
-  font-family: "Chivo";
+  font-family: "Museo Slab";
   margin-left: 16px;
   font-size: 28px;
   line-height: 1.5;
@@ -343,6 +339,7 @@ ol {
 
 .navBarUL li a {
   font-family: "Chivo";
+  font-family: "Museo Slab";
   color: $white !important;
   font-size: 18px;
   font-weight: 500;
@@ -429,7 +426,7 @@ blockquote {
   /* box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); */
   // background-color: $gray-10;
   padding: 18px 16px;
-  font-family: "Chivo";
+  font-family: "Museo Slab";
   font-size: 18px;
   font-weight: 600;
   display: flex;
@@ -453,7 +450,7 @@ blockquote {
 }
 
 .headerNav {
-  font-family: "Chivo";
+  font-family: "Museo Slab";
   padding: 0px 24px;
   color: $arch-blue;
   font-size: 18px;
@@ -575,15 +572,15 @@ blockquote {
   border-color: $gray-20 !important;
   border-style: solid none solid solid;
   border-width: 1px 0px 1px 1px;
-  background-color: #1ed3c6 !important;
+  background-color: $link !important;
   color: $white;
 }
 
 .titleWrapper {
   display: flex;
   align-items: center;
-  padding-bottom: 40px;
-  border-bottom: 1px solid $gray-20;
+  padding-bottom: 12px;
+  border-bottom: 2px solid $gray-30;
   margin-bottom: 32px;
 }
 
@@ -768,9 +765,10 @@ img {
   opacity: 0.7;
 }
 
-.heading1 {
+.heading1,
+h1 {
   font-size: 30px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.5;
   margin-bottom: 16px;
   margin-top: 32px;
@@ -814,6 +812,14 @@ img {
   line-height: 1.5;
   margin-bottom: 16px;
   margin-top: 32px;
+}
+h1,
+.heading2,
+.heading3,
+.heading4,
+.heading5,
+.heading6 {
+  font-family: "Museo Slab";
 }
 
 .paragraph {

@@ -29,6 +29,7 @@ const config = {
     ],
     collapsedNav: [
       '/voice-and-tone', // add trailing slash if enabled above
+      '/visual-elements',
     ],
     links: [{ text: 'New Vista Digital', link: 'https://NewVistaDigital.com' }],
     frontline: false,

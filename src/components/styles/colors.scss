@@ -3,33 +3,33 @@
 //
 
 $navy: #001f3f;
-$blue: #0074d9;
+// $blue: #0074d9;
 $aqua: #7fdbff;
 $teal: #39cccc;
 $olive: #3d9970;
-$green: #2ecc40;
+// $green: #2ecc40;
 $lime: #01ff70;
 $yellow: #ffdc00;
 $orange: #ff851b;
-$red: #ff4136;
+// $red: #ff4136;
 $fuchsia: #f012be;
 $purple: #b10dc9;
 $maroon: #85144b;
 $white: #fff;
 $silver: #ddd;
-$gray: #777;
+// $gray: #777;
 $black: #111;
 $sin: #000;
 
-$link: $blue;
+$link: #2376ff;
 
 //* Antioch Colors
 $arch-blue: #44697d;
-$arch-blue: #1274a8;
+$arch-blue-bright: #1274a8;
 $arch-sky: #a6bcc6;
 $arch-teal: #25c092;
 $arch-green: #a8b400;
-$arch-yellow: #f3d61d;
+$arch-yellow: #f6d33d;
 $arch-maroon: #7a382d;
 $arch-gray: #675c53;
 $arch-black: #292521;
@@ -54,6 +54,7 @@ $green: $arch-green;
 $teal: $arch-teal;
 $maroon: $arch-maroon;
 $purple: $arch-purple;
+$red: #d1423b;
 
 //! Color scheme generator
 //!
@@ -149,6 +150,19 @@ $green-80: mix($green-100, $lt, 80%);
 $green-60: mix($green-100, $lt, 60%);
 $green-40: mix($green-100, $lt, 40%);
 $green-20: mix($green-100, $lt, 20%);
+
+// blue-bright
+// ----
+// bootstrap @brand-primary
+$blue-bright-100: $arch-blue-bright;
+$blue-bright-800: mix($blue-bright-100, $dk, 20%);
+$blue-bright-600: mix($blue-bright-100, $dk, 40%);
+$blue-bright-400: mix($blue-bright-100, $dk, 60%);
+$blue-bright-200: mix($blue-bright-100, $dk, 80%);
+$blue-bright-80: mix($blue-bright-100, $lt, 80%);
+$blue-bright-60: mix($blue-bright-100, $lt, 60%);
+$blue-bright-40: mix($blue-bright-100, $lt, 40%);
+$blue-bright-20: mix($blue-bright-100, $lt, 20%);
 
 // blue
 // ----
@@ -327,107 +341,109 @@ $purple-20: mix($purple-100, $lt, 20%);
 // * This is your color scheme
 
 //* neutral
-$gray-100: #675c53;
-$gray-800: #151211;
-$gray-600: #292521;
-$gray-400: #3e3732;
-$gray-200: #524a42;
-$gray-90: #766c64;
-$gray-80: #857d75;
-$gray-70: #958d87;
-$gray-60: #a49d98;
-$gray-50: #b3aea9;
-$gray-40: #c2beba;
-$gray-30: #d1cecb;
-$gray-20: #e1dedd;
-$gray-10: #f0efee;
-$gray-00: #fff;
+// $gray-100: #675c53;
+// $gray-800: #151211;
+// $gray-600: #292521;
+// $gray-400: #3e3732;
+// $gray-200: #524a42;
+// $gray-90: #766c64;
+// $gray-80: #857d75;
+// $gray-70: #958d87;
+// $gray-60: #a49d98;
+// $gray-50: #b3aea9;
+// $gray-40: #c2beba;
+// $gray-30: #d1cecb;
+// $gray-20: #e1dedd;
+// $gray-10: #f0efee;
+// $gray-00: #fff;
 
-//* maroon
-$maroon-100: #7a382d;
-$maroon-800: #180b09;
-$maroon-600: #311612;
-$maroon-400: #49221b;
-$maroon-200: #622d24;
-$maroon-80: #956057;
-$maroon-60: #af8881;
-$maroon-40: #caafab;
-$maroon-20: #e4d7d5;
+// //* maroon
+// $maroon-100: #7a382d;
+// $maroon-800: #180b09;
+// $maroon-600: #311612;
+// $maroon-400: #49221b;
+// $maroon-200: #622d24;
+// $maroon-80: #956057;
+// $maroon-60: #af8881;
+// $maroon-40: #caafab;
+// $maroon-20: #e4d7d5;
 
-//* red
-$red-100: #ff4136;
-$red-800: #330d0b;
-$red-600: #661a16;
-$red-400: #992720;
-$red-200: #cc342b;
-$red-80: #ff675e;
-$red-60: #ff8d86;
-$red-40: #ffb3af;
-$red-20: #ffd9d7;
+// //* red
+// $red-100: #ff4136;
+// $red-800: #330d0b;
+// $red-600: #661a16;
+// $red-400: #992720;
+// $red-200: #cc342b;
+// $red-80: #ff675e;
+// $red-60: #ff8d86;
+// $red-40: #ffb3af;
+// $red-20: #ffd9d7;
 
-//* orange
-$orange-100: #ff851b;
-$orange-800: #331b05;
-$orange-600: #66350b;
-$orange-400: #995010;
-$orange-200: #cc6a16;
-$orange-80: #ff9d49;
-$orange-60: #ffb676;
-$orange-40: #ffcea4;
-$orange-20: #ffe7d1;
+// //* orange
+// $orange-100: #ff851b;
+// $orange-800: #331b05;
+// $orange-600: #66350b;
+// $orange-400: #995010;
+// $orange-200: #cc6a16;
+// $orange-80: #ff9d49;
+// $orange-60: #ffb676;
+// $orange-40: #ffcea4;
+// $orange-20: #ffe7d1;
 
-//* yellow
-$yellow-100: #f3d61d;
-$yellow-800: #312b06;
-$yellow-600: #61560c;
-$yellow-400: #928011;
-$yellow-200: #c2ab17;
-$yellow-80: #f5de4a;
-$yellow-60: #f8e677;
-$yellow-40: #faefa5;
-$yellow-20: #fdf7d2;
+// /*
+//   * yellow
+//   */
+// yellow-100: #f6d33d;
+// yellow-800: #312a0c;
+// yellow-600: #625418;
+// yellow-400: #947f25;
+// yellow-200: #c5a931;
+// yellow-80: #f8dc64;
+// yellow-60: #fae58b;
+// yellow-40: #fbedb1;
+// yellow-20: #fdf6d8;
 
-//* green
-$green-100: #a8b400;
-$green-800: #222400;
-$green-600: #434800;
-$green-400: #656c00;
-$green-200: #869000;
-$green-80: #b9c333;
-$green-60: #cbd266;
-$green-40: #dce199;
-$green-20: #eef0cc;
+// //* green
+// $green-100: #a8b400;
+// $green-800: #222400;
+// $green-600: #434800;
+// $green-400: #656c00;
+// $green-200: #869000;
+// $green-80: #b9c333;
+// $green-60: #cbd266;
+// $green-40: #dce199;
+// $green-20: #eef0cc;
 
-//* blue
-$blue-100: #1274a8;
-$blue-800: #041722;
-$blue-600: #072e43;
-$blue-400: #0b4665;
-$blue-200: #0e5d86;
-$blue-80: #4190b9;
-$blue-60: #71accb;
-$blue-40: #a0c7dc;
-$blue-20: #d0e3ee;
-$blue-00: #0074d9;
+// //* blue
+// $blue-100: #1274a8;
+// $blue-800: #041722;
+// $blue-600: #072e43;
+// $blue-400: #0b4665;
+// $blue-200: #0e5d86;
+// $blue-80: #4190b9;
+// $blue-60: #71accb;
+// $blue-40: #a0c7dc;
+// $blue-20: #d0e3ee;
+// $blue-00: #0074d9;
 
-//* teal
-$teal-100: #25c092;
-$teal-800: #07261d;
-$teal-600: #0f4d3a;
-$teal-400: #167358;
-$teal-200: #1e9a75;
-$teal-80: #51cda8;
-$teal-60: #7cd9be;
-$teal-40: #a8e6d3;
-$teal-20: #d3f2e9;
+// //* teal
+// $teal-100: #25c092;
+// $teal-800: #07261d;
+// $teal-600: #0f4d3a;
+// $teal-400: #167358;
+// $teal-200: #1e9a75;
+// $teal-80: #51cda8;
+// $teal-60: #7cd9be;
+// $teal-40: #a8e6d3;
+// $teal-20: #d3f2e9;
 
-//* purple
-$purple-100: #a93cb9;
-$purple-800: #220c25;
-$purple-600: #44184a;
-$purple-400: #65246f;
-$purple-200: #873094;
-$purple-80: #ba63c7;
-$purple-60: #cb8ad5;
-$purple-40: #ddb1e3;
-$purple-20: #eed8f1;
+// //* purple
+// $purple-100: #a93cb9;
+// $purple-800: #220c25;
+// $purple-600: #44184a;
+// $purple-400: #65246f;
+// $purple-200: #873094;
+// $purple-80: #ba63c7;
+// $purple-60: #cb8ad5;
+// $purple-40: #ddb1e3;
+// $purple-20: #eed8f1;
