@@ -3,20 +3,20 @@ const config = {
     pathPrefix: '/',
     siteUrl: 'https://brand.antiochcos.com',
     gaTrackingId: null,
-    trailingSlash: false,
+    trailingSlash: true,
   },
   header: {
     logo: '',
     logoLink: 'https://www.antiochcos.com',
     title: '',
     githubUrl: '/',
-    helpUrl: '',
+    helpUrl: 'mailto:jesse@newvistadigital.com?subject=ARCH Design Question',
     tweetText: '',
-    social: ``,
+    social: '',
     links: [{ text: '', link: '' }],
     search: {
       enabled: false,
-      indexName: '',
+      indexName: 'ARCH_INDEX',
       algoliaAppId: process.env.GATSBY_ALGOLIA_APP_ID,
       algoliaSearchKey: process.env.GATSBY_ALGOLIA_SEARCH_KEY,
       algoliaAdminKey: process.env.ALGOLIA_ADMIN_KEY,
@@ -24,27 +24,36 @@ const config = {
   },
   sidebar: {
     forcedNavOrder: [
-      '/introduction', // add trailing slash if enabled above
-      '/voice-and-tone',
+      '/introduction/', // add trailing slash if enabled above
+      '/voice-and-tone/',
+      '/visual-elements/',
     ],
     collapsedNav: [
-      '/voice-and-tone', // add trailing slash if enabled above
-      '/visual-elements',
+      '/voice-and-tone/', // add trailing slash if enabled above
+      '/visual-elements/',
     ],
     links: [{ text: 'New Vista Digital', link: 'https://NewVistaDigital.com' }],
-    frontline: false,
+    frontline: true,
     ignoreIndex: true,
     title: "<a href='/'>Arch Design System</a></div>",
+    version: {
+      number: '0.1_alpha',
+      color: 'yellow',
+    },
+    updated: {
+      date: 'April_2020',
+      color: 'green',
+    },
   },
   siteMetadata: {
-    title: 'Gatsby Gitbook Boilerplate | Hasura',
-    description: 'Documentation built with mdx. Powering hasura.io/learn ',
+    title: 'Arch Design System',
+    description: 'Documentation for Antioch Design System built with mdx.',
     ogImage: null,
-    docsLocation: '//tree/master/content',
-    favicon: 'https://graphql-engine-cdn.hasura.io/img/hasura_icon_black.svg',
+    docsLocation: '/tree/master/content',
+    favicon: '',
   },
   pwa: {
-    enabled: false, // disabling this will also remove the existing service worker.
+    enabled: true, // disabling this will also remove the existing service worker.
     manifest: {
       name: 'Arch Design System',
       short_name: 'Arch',

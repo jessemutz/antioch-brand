@@ -37,7 +37,8 @@ const ListItem = styled(({ className, active, level, ...props }) => {
       border-style: solid none solid solid;
       border-width: 1px 0px 1px 1px;
       background-color: #fff;
-    `} // external link icon
+    `}
+    // external link icon
     svg {
       float: right;
       margin-right: 1rem;
@@ -51,12 +52,9 @@ const Sidebar = styled('aside')`
   overflow: auto;
   position: fixed;
   padding-left: 0px;
-  position: -webkit-sticky;
-  position: -moz-sticky;
   position: sticky;
   top: 0;
   padding-right: 0;
-  // -webkit-box-shadow: -1px 0px 4px 1px rgba(175, 158, 232, 0.4);
 
   @media only screen and (max-width: 1023px) {
     width: 100%;
