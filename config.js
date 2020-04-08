@@ -3,7 +3,7 @@ const config = {
     pathPrefix: '/',
     siteUrl: 'https://brand.antiochcos.com',
     gaTrackingId: null,
-    trailingSlash: true,
+    trailingSlash: false,
   },
   header: {
     logo: '',
@@ -24,13 +24,13 @@ const config = {
   },
   sidebar: {
     forcedNavOrder: [
-      '/introduction/', // add trailing slash if enabled above
-      '/voice-and-tone/',
-      '/visual-elements/',
+      '/introduction', // add trailing slash if enabled above
+      '/voice-and-tone',
+      '/visual-elements',
     ],
     collapsedNav: [
-      '/voice-and-tone/', // add trailing slash if enabled above
-      '/visual-elements/',
+      '/voice-and-tone', // add trailing slash if enabled above
+      '/visual-elements',
     ],
     links: [{ text: 'New Vista Digital', link: 'https://NewVistaDigital.com' }],
     frontline: true,
