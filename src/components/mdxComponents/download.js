@@ -3,7 +3,12 @@ import * as React from 'react';
 const DownloadButton = ({ children: title, ...props }) => {
   return (
     <div class="download">
-      <a href={props.href} class="download-link" target="_blank" download>
+      <a
+        href={props.href}
+        class="download-link"
+        aria-label={`Download ${title}`}
+        target="_blank"
+        download>
         <svg class="icon" viewBox="0 0 120 120">
           <g>
             <g class="DownloadIcon">
